@@ -13,6 +13,13 @@ const UseEventPage = () => {
   return (
     <>
       <h2>4. useEvent</h2>
+      <span>using hooks</span>
+      <ul>
+        <li>useState</li>
+        <li>React.memo</li>
+        <li>useEvent</li>
+      </ul>
+
       <Input value={text} onChange={(e) => setText(e.target.value)} />
       <MemoExpensive onClick={onExpensiveClick} />
     </>

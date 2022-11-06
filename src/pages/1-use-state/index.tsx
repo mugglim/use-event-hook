@@ -12,6 +12,11 @@ const UseStatePage = () => {
   return (
     <>
       <h2>1. useState</h2>
+      <span>using hooks</span>
+      <ul>
+        <li>useState</li>
+      </ul>
+
       <Input value={text} onChange={(e) => setText(e.target.value)} />
       <Expensive onClick={onExpensiveClick} />
     </>
