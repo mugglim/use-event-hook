@@ -10,8 +10,8 @@ const LINKS = [
 const Header = () => {
   return (
     <ul style={{ display: 'flex', flexDirection: 'column', rowGap: 10 }}>
-      {LINKS.map((link) => (
-        <li>
+      {LINKS.map((link, index) => (
+        <li key={`${index}-${link}`}>
           <Link href={link}>{link.replace('/', '')}</Link>
         </li>
       ))}
