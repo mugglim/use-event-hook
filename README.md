@@ -6,12 +6,14 @@
 
 > 주의, `useEvent`는 아직 정식 hook은 아닙니다. React RFC에 제안되고 있는 훅 중 하나입니다.
 
-### Endpoints
+### Playground
 
-- `/1-useState` : useState
-- `/2-react-memo` : useState + React.memo
-- `/3-use-callback` : useState + React.memo + useCallback
-- `/4-use-event` : useState + React.memo + useEvent
+- Link : https://use-event-hook.vercel.app
+- Endpoints
+  - `/1-useState` : useState
+  - `/2-react-memo` : useState + React.memo
+  - `/3-use-callback` : useState + React.memo + useCallback
+  - `/4-use-event` : useState + React.memo + useEvent
 
 ### References
 
