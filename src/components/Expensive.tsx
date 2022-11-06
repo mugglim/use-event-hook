@@ -1,8 +1,7 @@
 import { getColor } from '@utils';
-import { useMemo } from 'react';
 
 const getDummyList = () => {
-  return Array.from(new Array(5_000), (_, i) => [i, getColor()]);
+  return Array.from(new Array(20_000), (_, i) => [i, getColor()]);
 };
 
 const COLOR_LIST = getDummyList();
