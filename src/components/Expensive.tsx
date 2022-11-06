@@ -1,7 +1,7 @@
 import { getColor } from '@utils';
 
 const getDummyList = () => {
-  return Array.from(new Array(20_000), (_, i) => [i, getColor()]);
+  return Array.from(new Array(50_000), (_, i) => [i, getColor()]);
 };
 
 const COLOR_LIST = getDummyList();
@@ -22,7 +22,12 @@ const Expensive = ({ onClick }: ExpensiveProps) => {
         {COLOR_LIST.map(([value, color], i) => (
           <div
             key={`${i}-${value}`}
-            style={{ width: 10, height: 10, backgroundColor: `${color}` }}
+            style={{
+              width: 5,
+              height: 5,
+              border: '1px solid #000',
+              backgroundColor: `${color}`,
+            }}
           />
         ))}
       </div>
