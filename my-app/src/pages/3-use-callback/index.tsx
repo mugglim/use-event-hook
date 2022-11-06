@@ -1,21 +1,21 @@
 import { useCallback, useState } from 'react';
 import Input from '@components/Input';
-import Expensive from '@components/Expensive';
+import MemoExpensive from '@components/MemoExpensive';
 
-const ReactMemoPage = () => {
+const UseCallbackPage = () => {
   const [text, setText] = useState('');
 
   const onExpensiveClick = useCallback(() => {
     console.log(text);
-  }, [text]);
+  }, []);
 
   return (
     <>
       <h2>3. useCallback</h2>
       <Input value={text} onChange={(e) => setText(e.target.value)} />
-      <Expensive onClick={onExpensiveClick} />
+      <MemoExpensive onClick={onExpensiveClick} />
     </>
   );
 };
 
-export default ReactMemoPage;
+export default UseCallbackPage;
