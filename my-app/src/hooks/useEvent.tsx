@@ -1,3 +1,5 @@
+// ref : https://github.com/Volune/use-event-callback/blob/master/src/index.ts
+
 import { useLayoutEffect, useMemo, useRef } from 'react';
 
 type Fn<ARGS extends any[], R> = (...args: ARGS) => R;
