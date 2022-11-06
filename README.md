@@ -8,6 +8,7 @@
 
 ### Playground
 
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)을 설치 후 `Profiler` 기능을 통해 리렌더링을 확인해보시는 걸 추천합니다.
 - Link : https://use-event-hook.vercel.app
 - Endpoints
   - `/1-useState` : useState
