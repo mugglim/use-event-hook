@@ -4,7 +4,7 @@ import { useLayoutEffect, useMemo, useRef } from 'react';
 
 type Fn<ARGS extends any[], R> = (...args: ARGS) => R;
 
-const useEventCallback = <A extends any[], R>(fn: Fn<A, R>): Fn<A, R> => {
+const useEvent = <A extends any[], R>(fn: Fn<A, R>): Fn<A, R> => {
   let ref = useRef<Fn<A, R>>(() => {
     throw new Error("Can't called");
   });
@@ -23,4 +23,4 @@ const useEventCallback = <A extends any[], R>(fn: Fn<A, R>): Fn<A, R> => {
   );
 };
 
-export default useEventCallback;
+export default useEvent;
