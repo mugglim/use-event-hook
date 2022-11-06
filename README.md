@@ -12,3 +12,10 @@
 - `/2-react-memo` : useState + React.memo
 - `/3-use-callback` : useState + React.memo + useCallback
 - `/4-use-event` : useState + React.memo + useEvent
+
+### References
+
+- [https://github.com/reactjs/rfcs/pull/220](https://github.com/reactjs/rfcs/pull/220)
+- [https://beta.reactjs.org/apis/react/useEvent](https://beta.reactjs.org/apis/react/useEvent)
+- [https://github.com/reactjs/rfcs/pull/220#issuecomment-1259938816](https://github.com/reactjs/rfcs/pull/220#issuecomment-1259938816)
+- [https://github.com/Volune/use-event-callback/blob/master/src/index.ts](https://github.com/Volune/use-event-callback/blob/master/src/index.ts)
