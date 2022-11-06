@@ -6,7 +6,7 @@ const ReactMemoPage = () => {
   const [text, setText] = useState('');
 
   const onExpensiveClick = () => {
-    console.log(text);
+    alert(text);
   };
 
   return (

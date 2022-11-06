@@ -6,7 +6,7 @@ const UseCallbackPage = () => {
   const [text, setText] = useState('');
 
   const onExpensiveClick = useCallback(() => {
-    console.log(text);
+    alert(text);
   }, [text]);
 
   return (

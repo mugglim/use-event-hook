@@ -6,7 +6,7 @@ const UseStatePage = () => {
   const [text, setText] = useState('');
 
   const onExpensiveClick = () => {
-    console.log(text);
+    alert(text);
   };
 
   return (

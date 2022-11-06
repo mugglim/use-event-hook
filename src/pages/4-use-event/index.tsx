@@ -7,7 +7,7 @@ const UseEventPage = () => {
   const [text, setText] = useState('');
 
   const onExpensiveClick = useEvent(() => {
-    console.log(text);
+    alert(text);
   });
 
   return (
