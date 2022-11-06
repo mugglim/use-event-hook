@@ -7,7 +7,7 @@ const UseCallbackPage = () => {
 
   const onExpensiveClick = useCallback(() => {
     console.log(text);
-  }, []);
+  }, [text]);
 
   return (
     <>

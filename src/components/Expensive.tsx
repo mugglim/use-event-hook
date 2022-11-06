@@ -1,4 +1,11 @@
 import { getColor } from '@utils';
+import { useMemo } from 'react';
+
+const getDummyList = () => {
+  return Array.from(new Array(5_000), (_, i) => [i, getColor()]);
+};
+
+const COLOR_LIST = getDummyList();
 
 const Expensive = ({ onClick }: ExpensiveProps) => {
   return (
@@ -11,7 +18,7 @@ const Expensive = ({ onClick }: ExpensiveProps) => {
         marginTop: 20,
       }}
     >
-      {getDummyList().map(([value, color], i) => (
+      {COLOR_LIST.map(([value, color], i) => (
         <div
           key={`${i}-${value}`}
           style={{ width: 10, height: 10, backgroundColor: `${color}` }}
@@ -19,10 +26,6 @@ const Expensive = ({ onClick }: ExpensiveProps) => {
       ))}
     </div>
   );
-};
-
-const getDummyList = () => {
-  return Array.from(new Array(5_000), (_, i) => [i, getColor()]);
 };
 
 export interface ExpensiveProps {
