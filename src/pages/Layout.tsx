@@ -9,7 +9,7 @@ const roboto = Roboto({
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div className={roboto.className}>
-      <div style={{ display: 'flex', width: '100vh', height: '100vh' }}>
+      <div style={{ display: 'flex', width: '100%', height: '100vh' }}>
         <div style={{ border: '1px solid #eee', padding: 5, minWidth: 200 }}>
           <Header />
         </div>

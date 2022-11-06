@@ -7,7 +7,7 @@ const Expensive = ({ onClick }: ExpensiveProps) => {
       style={{
         display: 'flex',
         flexWrap: 'wrap',
-        maxWidth: 1500,
+        width: '100%',
         marginTop: 20,
       }}
     >
